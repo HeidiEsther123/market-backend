@@ -97,4 +97,5 @@ public class Compra {
     public void setProductos(List<CompraProducto> productos) {
         this.productos = productos;
     }
+
 }
