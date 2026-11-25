@@ -27,6 +27,8 @@ public class Producto {
 
     private Boolean estado;
 
+    @Column(name = "image_url", length = 500)
+    private String imageUrl;
 
     @ManyToOne
     @JoinColumn(name = "id_categoria", insertable = false, updatable = false)
@@ -94,6 +96,14 @@ public class Producto {
 
     public void setCategoria(Categoria categoria) {
         this.categoria = categoria;
+    }
+
+    public String getImageUrl() {
+        return imageUrl;
+    }
+
+    public void setImageUrl(String imageUrl) {
+        this.imageUrl = imageUrl;
     }
 
 }
